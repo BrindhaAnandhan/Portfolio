@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brindha's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/de794040ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="home" class="header">
+        <div class="container">
+            <nav>
+                <img src="images/B (1).png" class="logo" alt="" srcset="">
+                <ul id="side">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>  
+                    <li><a href="#certificate">Certificate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas item" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I am <span>Brindha</span></h1>
+                <p>Aspiring Software Engineer</p>
+            </div>
+        </div>
+    </div>    
+
+
+    <!-- --------------------------------------------------------About------------------------------------------------ -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/bg.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="about-title">About Me</h1>
+                    <p class="text">Goal-oriented Aspiring Software Developer with strong commitment to collaboration and solutions-oriented problem-solving. Use
+                        various web design software to develop customer-focused web applications. Committed to high standards of user experience, usability
+                        and speed for multiple types of end-users. Successful at maintaining customer satisfaction through effective customer support.</p>
+
+                        <div class="tab-tit">
+                            <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-link" onclick="opentab('Exp')">Experience </p>
+                            <p class="tab-link" onclick="opentab('Edu')">Education</p>
+                        </div>
+
+                        <!-- skill -->
+                        <div class="tab-content active-tab" id="Skills">
+                            <ul>
+                                <li><span>Web Development- FrontEnd</span> <br> <div class="tech">HTML, CSS, JS</div> </li>
+                                <li><span>Software Development- BackEnd</span> <br><div class="tech">Python, Django, SQL </div></li>
+                                <li><span>Web Designing</span> <br><div class="tech">PhotoShop, Illustrator, Canva, Dreamweaver</div></li>
+
+                            </ul>
+                        </div>
+                        <!-- exp -->
+                        <div class="tab-content" id="Exp">
+                            <ul>
+                                <li><span>Python Full Stack Developer - Trainee</span> <br> <div class="tech">Jspiders <span class="small">(08/2023 - Present)  Marathahalli, Bengaluru, India</span></div> </li>
+                                <p>JSpiders is the software course training organization with an aim to bridge the gap between the demands of the
+                                    industry and the curriculum.</p>
+                                <ul>
+                                    <li>Learning the core technologies like Python, HTML, CSS, JavaScript, and MySQL</li>
+                                    <li>Attending regular in person classes with experienced teaching professionals.</li>
+                                    <li>Learnt Python Basics - Data types, Variables, Conditions, Built-in Functions, Dictionaries, Tuples, Lists, Class, and Functions. OOPs Concept - Class, Inheritance, Methods, Polymorphism, Abstraction.
+                                    </li>
+                                </ul>
+                                
+                            </ul>
+                        </div>
+                        <!-- edu -->
+                        <div class="tab-content" id="Edu">
+                            <ul>
+                                <li><span>Bachelor of Science - Visual Communication</span> <br> <div class="tech"> Avinashilingam University For Woman <span class="small">(2020 - 2023)  Coimbatore, TN, India</span></div> </li>
+                                <p>A passionate web application designer with a keen eye for aesthetics and a knack for turning concepts into captivating digital experiences. Currently honing my craft, I have successfully translated my design knowledge into tangible, user-centric web applications.</p>
+                                <ul>
+                                    <li> Proficient in design tools such as Adobe Creative Suite (Photoshop, Illustrator, XD).</li>
+                                    <li>Basic experience in creating designs compatible with HTML, CSS, and JavaScript.</li>
+                                    <li>Skills: Strategic Communications · Public Speaking · Web Design · Mobile Application Design · Dynamic Websites · Video Creation · Critical Thinking                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------- Certificate---------------------------------------->
+
+    <div id="certificate" class="Certificate">
+        <div class="container">
+            <h1 class="about-title">Certificate</h1>
+            <div class="clist">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Python Certification</h2>
+                    <p>- Google for Education By GUVI (05/2023)</p>
+                    <a href="https://www.guvi.in/certificate?id=8e1ypw21A686B3M33Q" target="_blank"> Certicate Link</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Development - HTML, CSS, JavaScript</h2>
+                    <p>IBM - Coursera (09/2023)</p>
+                    <a href="https://www.credly.com/badges/077fe9e2-6d10-4665-9375-f0a53655f6b7/print" target="_blank"> Certicate Link</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL Essential Training </h2>
+                    <p>- LinkedIn Learning (10/2023)</p>
+                    <a href="https://www.linkedin.com/learning/certificates/e62d47e094db6cd1ad64161a0c19e8dcfc31ad214f47c02fbe9386eb0476cac3" target="_blank"> Certicate Link</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ----------------------------------------- Portfolio ------------------------------------------------ -->
+
+    <div id="portfolio" class="Portfolio">
+        <div class="container">
+            <h1 class="about-title">My Work </h1>
+            <div class="wlist">
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>This app connect you the talented people around the world. Use it</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>This app helps you do your day-to-day math. Use it</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping</h3>
+                        <p>This app connect you the salesman directly. Use it</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See more </a>
+        </div>
+    </div>
+
+
+    <!-- -------------------------------------------------Contact--------------------------------------------------- -->
+    <div id="contact" class="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="con-left">
+                    <h1 class="about-title">Contact Me </h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>brindhaanand1409@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91 9790156818 </p>
+                    <div class="s-icon">
+                        <a href="https://www.linkedin.com/in/brindhaanand/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/BrindhaAnandhan" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.hackerrank.com/profile/brindhaorbindu" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+                    </div>
+                    <a href="images/Brindha_s.pdf" download target="_blank" class="btn btn-2">Dowload CV</a>
+                </div>
+                <div class="con-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Msg"  cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-3">Submit</button>
+                    </form>
+                    <span id="masg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Brindha. Made with passion. </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzA_UawMg2_xAO09YcmluD9f83c4NsaiewpMW1xFYFrNGXhHnC-SGCvfoKnfO-BGLeVHQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const masg = document.getElementById('masg');
+
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                masg.innerHTML = ' Message sent successfully  '
+                setTimeout(function(){
+                    masg.innerHTML = " "
+                }, 5000)
+                form.reset()
+            } )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
